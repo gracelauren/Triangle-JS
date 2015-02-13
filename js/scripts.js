@@ -18,3 +18,24 @@ var triangleType = function(sideLengths) {
 
   return result;
 };
+
+$(document).ready(function() {
+  $('#styleMe input[type="text"]').blur(function(){
+    if($(this).val().length > 0){
+      $(this).addClass('white');
+    } else {
+      $(this).removeClass('white');
+    }
+  });
+
+  $("form#orderMe").submit(function(event) {
+    var sideA = $("input#sideA").val();
+    var sideB = $("input#sideB").val();
+    var sideC = $("input#sideC").val();
+    var sideLengths = sideA + sideB + sideC;
+    var result = triangleType(sideLengths);
+    $(".type").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
+});
