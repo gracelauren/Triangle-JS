@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
   });
 
-  $("form#orderMe").submit(function(event) {
+  $("form#sides").submit(function(event) {
     var sideA = $("input#sideA").val();
     var sideB = $("input#sideB").val();
     var sideC = $("input#sideC").val();
