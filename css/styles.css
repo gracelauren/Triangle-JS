@@ -38,7 +38,7 @@ h5 {
   margin: 0 0 50px 0; }
 #styleMe label.input {
   float: left;
-  width: 460px;
+  width: 150px;
   height: 42px;
   margin: 50px 0 0 0;
   position: relative;
@@ -87,7 +87,7 @@ h5 {
   -moz-transition: 0.3s; }
 #styleMe input {
   float: left;
-  width: 460px;
+  width: 150px;
   height: 40px;
   padding: 0 10px;
   border: 0;
