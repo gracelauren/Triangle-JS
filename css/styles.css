@@ -23,6 +23,13 @@ h1 {
   font-size: 48px;
   font-weight: normal;
   text-align: center; }
+h2 {
+  margin: 50px 0 0 0;
+  color: #fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center; }
 
 h5 {
   margin: 50px 0 0 0;
@@ -31,6 +38,48 @@ h5 {
   font-size: 25px;
   font-weight: normal;
   text-align: center; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 300px solid rgba(86, 249, 203, 1);
+  border-right: 250px solid transparent;
+}
+
+.isosceles {
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  border-right: 50px solid transparent;
+  border-bottom: 150px solid #56F9CB;
+  border-left: 50px solid transparent;
+}
+
+.equilateral {
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  border-right: 80px solid transparent;
+  border-bottom: 130px solid #56F9CB;
+  border-left: 80px solid transparent;
+}
+
+.scalene {
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  border-right: 40px solid transparent;
+  border-bottom: 100px solid #56F9CB;
+  border-left: 150px solid transparent;
+}
+
+.midTriangle {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  width: 215;
+  padding-top: 40%;
+}
 
 #styleMe {
   float: left;
