@@ -6,7 +6,12 @@ var triangleType = function(sideLengths) {
   var result = "";
 
   if (longestSide < (sideA + sideB)) {
-    result = "it is a triangle";
+    result = "a scalene triangle";
+    if (sideA === longestSide && longestSide === sideB) {
+      result = "an equilateral triangle";
+    } else if (sideA === longestSide || longestSide === sideB || sideB === sideA){
+      result = "an isosceles triangle";
+    }
   } else {
     result = "not a triangle";
   }
