@@ -1,5 +1,5 @@
 var triangleType = function(sideLengths) {
-  var sideLengths = sideLengths.split("").sort();
+  var sideLengths = sideLengths.split(",").sort();
   var longestSide = parseInt(sideLengths.pop());
   var sideA = parseInt(sideLengths.pop());
   var sideB = parseInt(sideLengths.pop());
@@ -32,13 +32,13 @@ $(document).ready(function() {
     var sideA = $("input#sideA").val();
     var sideB = $("input#sideB").val();
     var sideC = $("input#sideC").val();
-    var sideLengths = sideA + sideB + sideC;
+    var sideLengths = sideA + "," + sideB + "," + sideC;
     var longestSide = sideLengths.split("").sort().pop();
     var result = triangleType(sideLengths);
     $(".type").text(result);
     $("#result").show();
 
-    if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB) ) {
+    if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB)) {
       $('#ttype').switchClass('triangle','equilateral', "easeInOutQuad");
     } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB)) && parseInt(sideA) < (parseInt(longestSide) + parseInt(sideB))  && parseInt(sideB) < (parseInt(longestSide) + parseInt(sideA)))) {
       $('#ttype').switchClass('triangle','icono-cross', "easeInOutQuad");
