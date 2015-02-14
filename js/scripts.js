@@ -38,7 +38,7 @@ $(document).ready(function() {
     $(".type").text(result);
     $("#result").show();
 
-    if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB) ) {
+    if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB) && parseInt(sideB) === parseInt(sideB)) {
       $('#ttype').switchClass('triangle','equilateral', "easeInOutQuad");
     } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB)) && parseInt(sideA) < (parseInt(longestSide) + parseInt(sideB))  && parseInt(sideB) < (parseInt(longestSide) + parseInt(sideA)))) {
       $('#ttype').switchClass('triangle','icono-cross', "easeInOutQuad");
