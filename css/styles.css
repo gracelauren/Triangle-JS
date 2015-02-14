@@ -73,6 +73,24 @@ h5 {
   border-left: 150px solid transparent;
 }
 
+.icono-cross{
+  color: red;
+  width: 100%;
+  height: 100%;
+  }
+
+.icono-cross::before{
+  width: 150px;
+  height: 15px;
+}
+
+.icono-cross::after{
+  width: 15px;
+  height: 150px;
+}
+
+
+
 .midTriangle {
   position: relative;
   width: 100%;

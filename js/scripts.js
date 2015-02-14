@@ -40,23 +40,15 @@ $(document).ready(function() {
 
     if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB) ) {
       $('#ttype').switchClass('triangle','equilateral', "easeInOutQuad");
+    } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB)) && parseInt(sideA) < (parseInt(longestSide) + parseInt(sideB))  && parseInt(sideB) < (parseInt(longestSide) + parseInt(sideA)))) {
+      $('#ttype').switchClass('triangle','icono-cross', "easeInOutQuad");
     } else if( parseInt(sideA) === parseInt(longestSide) || parseInt(longestSide) === parseInt(sideB) || parseInt(sideB) === parseInt(sideA) ) {
       $('#ttype').switchClass('triangle','isosceles', "easeInOutQuad");
-    } else {
+    } else if(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB))){
       $('#ttype').switchClass('triangle','scalene', "easeInOutQuad");
     }
 
     event.preventDefault();
   });
-  //
-  // $("form#sides").submit(function(event) {
-  //     $('triangle').switchClass('triangle','scalene');
-  //     if( parseInt(sideA) === parseInt(longestSide) && parseInt(longestSide) === parseInt(sideB) ) {
-  //       $('triangle').switchClass('triangle','equilateral');
-  //     } else if( parseInt(sideA) === parseInt(longestSide) || parseInt(longestSide) === parseInt(sideB) || parseInt(sideB) === parseInt(sideA) ) {
-  //       $('triangle').switchClass('triangle','isosceles');
-  //     }
-  // });
-
 
 });
