@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     if( (parseInt(sideA) === parseInt(sideC)) && (parseInt(sideC) === parseInt(sideB))) {
       $('#ttype').switchClass('triangle icono-cross isosceles scalene','equilateral', "easeInOutQuad");
-    } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB))) {  
+    } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB)))) {  
       $('#ttype').switchClass('triangle equilateral isosceles scalene','icono-cross', "easeInOutQuad");
     } else if( parseInt(sideA) === parseInt(sideC) || parseInt(sideC) === parseInt(sideB) || parseInt(sideB) === parseInt(sideA) ) {
       $('#ttype').switchClass('triangle equilateral scalene icono-cross','isosceles', "easeInOutQuad");
