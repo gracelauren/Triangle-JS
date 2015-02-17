@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('#ttype').switchClass('triangle icono-cross isosceles scalene','equilateral', "easeInOutQuad");
     } else if(!(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB)) && parseInt(sideA) < (parseInt(longestSide) + parseInt(sideB))  && parseInt(sideB) < (parseInt(longestSide) + parseInt(sideA)))) {  
       $('#ttype').switchClass('triangle equilateral isosceles scalene','icono-cross', "easeInOutQuad");
-    } else if( parseInt(sideA) === parseInt(longestSide) || parseInt(longestSide) === parseInt(sideB) || parseInt(sideB) === parseInt(sideA) ) {
+    } else if( parseInt(sideA) === parseInt(sideC) || parseInt(sideC) === parseInt(sideB) || parseInt(sideB) === parseInt(sideA) ) {
       $('#ttype').switchClass('triangle equilateral scalene icono-cross','isosceles', "easeInOutQuad");
     } else if(parseInt(longestSide) < (parseInt(sideA) + parseInt(sideB))){
       $('#ttype').switchClass('triangle isosceles equilateral icono-cross','scalene', "easeInOutQuad");
